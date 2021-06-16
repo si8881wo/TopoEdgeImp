@@ -1,5 +1,3 @@
-[![DOI](https://zenodo.org/badge/351403602.svg)]()
-
 # Introduction
 This project consists of two notebooks that are using the [Julia](https://julialang.org) programming language.
 Some physics background is provided in the first notebook.
@@ -16,7 +14,7 @@ The notebook [evaluation.ipynb](evaluation.ipynb) explaines how to read these da
 The full results are currently being used to prepare a manuscript.
 
 # Running the notebooks
-If you don't want to install anything you can simply use the following binder link: [![Binder](https://mybinder.org/badge_logo.svg)]()
+If you don't want to install anything you can simply use the following binder link: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/si8881wo/TopoEdgeImp/HEAD)
 
 To run it locally on your computer simply download this repo and unzip it.
 I'm assuming you have a conda installation and can run jupyter notebook.
