@@ -46,17 +46,7 @@ open(logfile,"a") do iolog
     timestamp=now()
     write(iolog, "[$timestamp]: START V8 with parameters: V=$V , LolB=$LolB , M=$M, Ms=$Ms, Omega=$Omega , nmax=$nmax , Erange=$Erange, $Nruns imp averaging runs \n")
 end
-# .dat file
-#outputfile_TLR="data/v8/$(startdate)_$i/$(startdate)_TLR.dat"
-#outputfile_TRL="data/v8/$(startdate)_$i/$(startdate)_TRL.dat"
-#outputfile_DOS="data/v8/$(startdate)_$i/$(startdate)_DOS.dat"
-#outputfile_Tdiff="data/v8/$(startdate)_$i/$(startdate)_Tdiff.dat"
-#while isfile(outputfile)==true # check for existing file
-#    outputfile=outputfile * ".more"
-#end # while
-
-
-    
+   
 # Transmission calculations
 for run=1:Nruns
     Xvec,cent=imps(Nimp)
@@ -79,20 +69,3 @@ open(logfile,"a") do iolog
     timestamp=now()
     write(iolog, "[$timestamp]: DONE")
 end
-
-#function read_input_from_k_file(A)
-#    B=[]
-#    b=Float64[]
-#    for a in A
-#        if first(a)=='['
-#            push!(b,parse(Float64,a[2:end]))
-#        elseif typeof(a)==Float64
-#            push!(b,a)
-#        elseif last(a)==']'
-#            push!(b,parse(Float64,a[1:end-1]))
-#            push!(B,b)
-#            b=Float64[]
-#        end
-#    end
-#    return B
-#end
